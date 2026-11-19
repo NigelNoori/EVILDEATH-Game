@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvilDeath — Community</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><script src="./image-slot.js"></script><style>html,body{margin:0;background:#08080b;color:#ecebe6;font-family:'Chakra Petch',sans-serif;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}a{color:#ecebe6;text-decoration:none}a:hover{color:#ff2a6d}button{font-family:inherit}
+.ed-burger{display:none}.ed-menu-link:hover .ed-menu-arrow{color:#ff2a6d}
+@keyframes ed-glow{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes ed-kb{0%{transform:scale(1.03)}100%{transform:scale(1.1) translate(0,-1%)}}
+@keyframes ed-ember-a{0%{transform:translate(0,0);opacity:0}12%{opacity:1}100%{transform:translate(60px,-80vh);opacity:0}}
+@keyframes ed-ember-b{0%{transform:translate(0,0);opacity:0}12%{opacity:.9}100%{transform:translate(-50px,-70vh);opacity:0}}
+@keyframes ed-pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,42,109,.7)}70%{box-shadow:0 0 0 8px rgba(255,42,109,0)}}
+.ed-ember{position:absolute;bottom:-8px;border-radius:50%;background:#ff6a3d;box-shadow:0 0 6px 1px rgba(255,80,40,.85),0 0 14px 3px rgba(255,42,109,.35);opacity:0}
+.ed-live-dot{width:8px;height:8px;border-radius:50%;background:#ff2a6d;animation:ed-pulse 1.6s infinite}
+.ed-glitch{position:relative;animation:ed-gmain 5s steps(1) infinite}.ed-glitch::before,.ed-glitch::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;height:100%;white-space:pre-line;pointer-events:none;opacity:0}.ed-glitch::before{color:#2de2e6;animation:ed-g1 5s steps(1) infinite}.ed-glitch::after{color:#ff2a6d;animation:ed-g2 5s steps(1) infinite}.ed-glitch:hover,.ed-glitch:hover::before,.ed-glitch:hover::after{animation-duration:.9s}.ed-gd1,.ed-gd1::before,.ed-gd1::after{animation-delay:1.4s}.ed-gd2,.ed-gd2::before,.ed-gd2::after{animation-delay:2.7s}.ed-gd3,.ed-gd3::before,.ed-gd3::after{animation-delay:.6s}.ed-gd4,.ed-gd4::before,.ed-gd4::after{animation-delay:3.6s}
+@keyframes ed-gmain{0%,100%{transform:none;text-shadow:none}2%{transform:translate(3px,0) skewX(-6deg);text-shadow:-3px 0 rgba(45,226,230,.7),3px 0 rgba(255,42,109,.7)}4%{transform:translate(-3px,1px);text-shadow:none}6%{transform:skewX(4deg)}8%{transform:none}61%{transform:translate(-2px,0) skewX(4deg);text-shadow:2px 0 rgba(255,42,109,.7)}63%{transform:none;text-shadow:none}}
+@keyframes ed-g1{0%,100%{opacity:0;transform:none;clip-path:inset(0 0 0 0)}2%{opacity:.9;transform:translate(-8px,2px);clip-path:inset(8% 0 62% 0)}4%{opacity:.9;transform:translate(6px,-2px);clip-path:inset(55% 0 22% 0)}6%{opacity:.9;transform:translate(-4px,0);clip-path:inset(30% 0 48% 0)}8%{opacity:0}61%{opacity:.85;transform:translate(5px,0);clip-path:inset(72% 0 6% 0)}63%{opacity:0}}
+@keyframes ed-g2{0%,100%{opacity:0;transform:none;clip-path:inset(0 0 0 0)}2%{opacity:.9;transform:translate(7px,-1px);clip-path:inset(40% 0 35% 0)}4%{opacity:.9;transform:translate(-6px,2px);clip-path:inset(12% 0 70% 0)}6%{opacity:.9;transform:translate(3px,0);clip-path:inset(78% 0 4% 0)}8%{opacity:0}61%{opacity:.85;transform:translate(-5px,0);clip-path:inset(20% 0 60% 0)}63%{opacity:0}}
+@keyframes ed-flick{0%,100%{opacity:1}3%{opacity:.15}4%{opacity:1}6%{opacity:.4}7%{opacity:1}52%{opacity:1}53%{opacity:.25}54%{opacity:1}}.ed-flicker{animation:ed-flick 3.7s steps(1) infinite}
+.ed-gallery{columns:3 300px;column-gap:20px}.ed-gallery>figure{break-inside:avoid;margin:0 0 20px}
+.ed-card-arrow{transition:transform .2s}.ed-channel:hover .ed-card-arrow{transform:translateX(4px)}
+@media (min-width:901px){.ed-menu{display:none!important}}
+@media (max-width:900px){.ed-nav,.ed-lang,.ed-signin{display:none!important}.ed-burger{display:flex!important}}
+@media (max-width:420px){.ed-headcta{padding:9px 14px!important;font-size:12px!important}.ed-logo{font-size:17px!important}}
+@media (max-width:640px){.ed-hero{min-height:100svh!important}.ed-hero-ctas>*{flex:1 1 100%;justify-content:center}.ed-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ed-cd{gap:8px!important}.ed-foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:32px!important}.ed-foot-brand{grid-column:1/-1!important}.ed-lb-hide{display:none!important}}
+@media (prefers-reduced-motion:reduce){.ed-anim,.ed-anim *,.ed-glitch,.ed-glitch::before,.ed-glitch::after,.ed-flicker,.ed-live-dot{animation:none!important}}
+</style></helmet>
+<div style="min-height:100vh;background:#08080b">
+
+<header style="position:sticky;top:0;z-index:20;background:rgba(8,8,11,.8);backdrop-filter:blur(10px);border-bottom:1px solid #26262e">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,2vw,24px);padding:0 clamp(16px,4vw,48px);height:68px">
+    <div style="display:flex;align-items:center;gap:clamp(16px,3vw,40px);flex:1 1 auto;min-width:0">
+      <a href="index.html" class="ed-logo" style="flex:none;display:flex;align-items:center;gap:10px;font:700 20px 'Chakra Petch';letter-spacing:.08em"><span style="width:14px;height:14px;background:#ff2a6d;clip-path:polygon(0 0,100% 0,100% 60%,60% 100%,0 100%)"></span>EVILDEATH</a>
+      <nav class="ed-nav" aria-label="Main" style="display:flex;flex-wrap:wrap;height:22px;overflow:hidden;min-width:0;column-gap:clamp(14px,2vw,28px);font:500 14px/20px 'Chakra Petch';letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">
+        <a href="index.html#features">Game</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#top">Media</a>
+        <a href="#top" aria-current="page" style="color:#ff2a6d;border-bottom:2px solid #ff2a6d">Community</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+    <div style="display:flex;align-items:center;gap:clamp(12px,1.6vw,20px);flex:none;white-space:nowrap">
+      <span class="ed-lang" style="font:500 12px 'IBM Plex Mono';color:#8a8a96">EN ▾</span>
+      <a href="#top" class="ed-signin" style="font:500 14px 'Chakra Petch';letter-spacing:.06em;text-transform:uppercase">Sign in</a>
+      <a href="index.html#play" class="ed-headcta" style="background:#ff2a6d;color:#08080b;font:700 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:11px 20px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))" style-hover="background:#ecebe6;color:#08080b">Play free</a>
+      <button class="ed-burger" onClick="{{ openMenu }}" aria-label="Open menu" aria-expanded="{{ menuExpanded }}" style="width:44px;height:44px;margin-right:-8px;background:none;border:0;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0" style-hover="opacity:.75">
+        <span aria-hidden="true" style="display:block;width:24px;height:2px;background:#ecebe6"></span>
+        <span aria-hidden="true" style="display:block;width:24px;height:2px;background:#ecebe6"></span>
+        <span aria-hidden="true" style="display:block;width:16px;height:2px;background:#ff2a6d;align-self:flex-end;margin-right:10px"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div class="ed-menu" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed;inset:0;z-index:40;background:#08080b;display:flex;flex-direction:column;overflow-y:auto">
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px)"></div>
+    <div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,48px);height:68px;flex:none;border-bottom:1px solid #26262e">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;font:700 20px 'Chakra Petch';letter-spacing:.08em"><span style="width:14px;height:14px;background:#ff2a6d;clip-path:polygon(0 0,100% 0,100% 60%,60% 100%,0 100%)"></span>EVILDEATH</a>
+      <button onClick="{{ closeMenu }}" aria-label="Close menu" style="width:44px;height:44px;margin-right:-8px;background:none;border:0;cursor:pointer;color:#ecebe6;font:400 30px/1 'Chakra Petch';display:flex;align-items:center;justify-content:center" style-hover="color:#ff2a6d">✕</button>
+    </div>
+    <nav aria-label="Mobile" style="position:relative;flex:1 0 auto;display:flex;flex-direction:column;padding:24px clamp(16px,4vw,48px)">
+      <a href="index.html#features" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">01</span>Game<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="index.html#news" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">02</span>News<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="index.html#top" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">03</span>Media<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="#top" onClick="{{ closeMenu }}" aria-current="page" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em;color:#ff2a6d"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">04</span>Community<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#ff2a6d">●</span></a>
+      <a href="support.html" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">05</span>Support<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+    </nav>
+    <div style="position:relative;flex:none;display:flex;flex-direction:column;gap:20px;padding:24px clamp(16px,4vw,48px) 32px">
+      <a href="index.html#play" style="display:flex;align-items:center;justify-content:center;gap:14px;background:#ff2a6d;color:#08080b;font:700 18px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:20px 24px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))" style-hover="background:#ecebe6;color:#08080b">Play free <span style="font-size:22px">→</span></a>
+      <div style="display:flex;justify-content:space-between;align-items:center;font:500 13px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2">
+        <a href="#top" onClick="{{ closeMenu }}" style="font:600 15px 'Chakra Petch';letter-spacing:.06em;text-transform:uppercase">Sign in</a>
+        <span>EN ▾</span>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<!-- HERO -->
+<section id="top" class="ed-hero" style="position:relative;min-height:100vh;margin-top:-68px;overflow:hidden;border-bottom:1px solid #26262e;display:flex;flex-direction:column;justify-content:space-between">
+  <div class="ed-anim" data-ph="0.4" style="position:absolute;inset:0;overflow:hidden;will-change:transform">
+    <img src="./img/community/community-hero.jpg" alt="Five armored syndicate knights stand in a line facing a burning gothic city under a red sky" style="display:block;width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:ed-kb 24s ease-in-out infinite alternate">
+  </div>
+  <div class="ed-anim" data-ph="0.2" aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 20%,rgba(255,42,60,.25),transparent 70%);mix-blend-mode:screen;animation:ed-glow 7s ease-in-out infinite"></div>
+    <span class="ed-ember" style="left:8%;width:3px;height:3px;animation:ed-ember-a 9s linear -1s infinite"></span>
+    <span class="ed-ember" style="left:19%;width:2px;height:2px;animation:ed-ember-b 12s linear -6s infinite"></span>
+    <span class="ed-ember" style="left:31%;width:4px;height:4px;animation:ed-ember-a 10s linear -3s infinite"></span>
+    <span class="ed-ember" style="left:44%;width:2px;height:2px;animation:ed-ember-b 13s linear -9s infinite"></span>
+    <span class="ed-ember" style="left:56%;width:3px;height:3px;animation:ed-ember-a 8s linear -2s infinite"></span>
+    <span class="ed-ember" style="left:67%;width:2px;height:2px;animation:ed-ember-b 11s linear -7s infinite"></span>
+    <span class="ed-ember" style="left:78%;width:3px;height:3px;animation:ed-ember-a 14s linear -4s infinite"></span>
+    <span class="ed-ember" style="left:90%;width:2px;height:2px;animation:ed-ember-b 10s linear -8s infinite"></span>
+  </div>
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)"></div>
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,8,11,.85) 0%,rgba(8,8,11,.15) 38%,rgba(8,8,11,.1) 55%,rgba(8,8,11,.96) 100%)"></div>
+
+  <div data-ph="-0.15" data-fade="0.7" style="position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;padding:clamp(108px,16vh,150px) clamp(16px,4vw,48px) 0">
+    <div class="ed-flicker" style="display:flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6"><span class="ed-live-dot" aria-hidden="true"></span>// COMMUNITY HUB</div>
+    <h1 class="ed-glitch" data-text="Join the&#10;Syndicate" style="margin:0;font:700 clamp(52px,9vw,140px)/.84 'Chakra Petch';letter-spacing:-.02em;text-transform:uppercase">Join the<br><span style="color:#ff2a6d">Syndicate</span></h1>
+    <p style="margin:0;font:400 clamp(16px,1.4vw,20px)/1.5 'Chakra Petch';color:#d4d3cd;max-width:560px;text-wrap:pretty">Runners don't survive alone. Squad up, share your best kills, and help shape what Neo-Kowloon becomes next.</p>
+    <div class="ed-hero-ctas" style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;width:100%;max-width:560px">
+      <a href="#channels" style="display:flex;align-items:center;gap:12px;background:#ff2a6d;color:#08080b;font:700 17px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:18px 30px;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))" style-hover="background:#ecebe6;color:#08080b">Join the Discord <span style="font-size:20px">→</span></a>
+      <a href="#channels" style="display:flex;align-items:center;gap:12px;background:rgba(8,8,11,.55);backdrop-filter:blur(6px);border:1px solid #4a4a55;font:600 17px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:17px 26px" style-hover="border-color:#2de2e6;color:#ecebe6"><span class="ed-live-dot" aria-hidden="true"></span>Watch live</a>
+    </div>
+  </div>
+
+  <div style="position:relative;padding:clamp(40px,8vh,80px) clamp(16px,4vw,48px) clamp(24px,5vh,48px)">
+    <div class="ed-stats" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #26262e;background:rgba(8,8,11,.6);backdrop-filter:blur(8px)">
+      <div style="display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-right:1px solid #26262e;border-bottom:1px solid #26262e;margin-bottom:-1px">
+        <span style="display:flex;align-items:center;gap:8px;font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2"><span class="ed-live-dot" aria-hidden="true" style="width:6px;height:6px"></span>RUNNERS ONLINE</span>
+        <span aria-live="off" style="font:700 clamp(24px,3vw,38px)/1 'Chakra Petch';font-variant-numeric:tabular-nums">{{ online }}</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-right:1px solid #26262e;border-bottom:1px solid #26262e;margin-bottom:-1px">
+        <span style="font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2">DISCORD MEMBERS</span>
+        <span style="font:700 clamp(24px,3vw,38px)/1 'Chakra Petch'">412K</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-right:1px solid #26262e;border-bottom:1px solid #26262e;margin-bottom:-1px">
+        <span style="font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2">CLIPS THIS WEEK</span>
+        <span style="font:700 clamp(24px,3vw,38px)/1 'Chakra Petch'">38,904</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;padding:20px 22px;border-bottom:1px solid #26262e;margin-bottom:-1px">
+        <span style="font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2">ACTIVE SYNDICATES</span>
+        <span style="font:700 clamp(24px,3vw,38px)/1 'Chakra Petch';color:#2de2e6">7</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section id="channels" style="padding:clamp(64px,10vw,128px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px">
+    <h2 class="ed-glitch ed-gd1" data-text="Find your&#10;crew." style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Find your<br>crew.</h2>
+    <div style="font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96">01 // CHANNELS</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px">
+    <a href="#channels" class="ed-channel" style="position:relative;display:flex;flex-direction:column;gap:28px;padding:24px;background:#101015;border:1px solid #26262e;border-top:3px solid #ff2a6d;min-height:220px" style-hover="border-color:#ff2a6d;background:#14141a;color:#ecebe6">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">DISCORD</span><span class="ed-card-arrow" aria-hidden="true" style="font-size:20px;color:#ff2a6d">→</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:auto"><span style="font:700 26px/1.05 'Chakra Petch';text-transform:uppercase">The Undercity</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">LFG, patch talk and dev drops — 412K members.</span></div>
+    </a>
+    <a href="#channels" class="ed-channel" style="position:relative;display:flex;flex-direction:column;gap:28px;padding:24px;background:#101015;border:1px solid #26262e;border-top:3px solid #2de2e6;min-height:220px" style-hover="border-color:#2de2e6;background:#14141a;color:#ecebe6">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="display:flex;align-items:center;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6">TWITCH <span style="background:#ff2a6d;color:#08080b;padding:2px 6px;font-size:10px">LIVE</span></span><span class="ed-card-arrow" aria-hidden="true" style="font-size:20px;color:#2de2e6">→</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:auto"><span style="font:700 26px/1.05 'Chakra Petch';text-transform:uppercase">Dev Streams</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Weekly builds, community cups and Q&amp;A.</span></div>
+    </a>
+    <a href="#channels" class="ed-channel" style="position:relative;display:flex;flex-direction:column;gap:28px;padding:24px;background:#101015;border:1px solid #26262e;border-top:3px solid #ecebe6;min-height:220px" style-hover="border-color:#ecebe6;background:#14141a;color:#ecebe6">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ecebe6">REDDIT</span><span class="ed-card-arrow" aria-hidden="true" style="font-size:20px">→</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:auto"><span style="font:700 26px/1.05 'Chakra Petch';text-transform:uppercase">r/EvilDeath</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Builds, theories and the best of the wreckage.</span></div>
+    </a>
+    <a href="#channels" class="ed-channel" style="position:relative;display:flex;flex-direction:column;gap:28px;padding:24px;background:#101015;border:1px solid #26262e;border-top:3px solid #ff2a6d;min-height:220px" style-hover="border-color:#ff2a6d;background:#14141a;color:#ecebe6">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">YOUTUBE</span><span class="ed-card-arrow" aria-hidden="true" style="font-size:20px;color:#ff2a6d">→</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:auto"><span style="font:700 26px/1.05 'Chakra Petch';text-transform:uppercase">Trailers &amp; Lore</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Cinematics, dev diaries and syndicate history.</span></div>
+    </a>
+    <a href="#channels" class="ed-channel" style="position:relative;display:flex;flex-direction:column;gap:28px;padding:24px;background:#101015;border:1px solid #26262e;border-top:3px solid #2de2e6;min-height:220px" style-hover="border-color:#2de2e6;background:#14141a;color:#ecebe6">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6">X / TWITTER</span><span class="ed-card-arrow" aria-hidden="true" style="font-size:20px;color:#2de2e6">→</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:auto"><span style="font:700 26px/1.05 'Chakra Petch';text-transform:uppercase">@EvilDeathGame</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Server status, drops and first looks.</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" style="padding:clamp(64px,10vw,128px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px">
+    <h2 class="ed-glitch ed-gd2" data-text="Upcoming events" style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Upcoming events</h2>
+    <div style="font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96">02 // EVENTS</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:stretch">
+    <article style="position:relative;overflow:hidden;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid #26262e">
+      <div style="position:absolute;inset:0;overflow:hidden"><div data-px="0.12" style="position:absolute;left:0;right:0;top:-10%;bottom:-10%;will-change:transform"><image-slot id="event-feature" shape="rect" src="./img/news-2.jpg" placeholder="Event key art"></image-slot></div></div>
+      <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,8,11,.1) 0%,rgba(8,8,11,.6) 45%,rgba(8,8,11,.96) 100%)"></div>
+      <div style="position:relative;display:flex;flex-direction:column;gap:18px;padding:clamp(20px,3vw,32px)">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;font:500 12px 'IBM Plex Mono';letter-spacing:.12em"><span style="background:#ff2a6d;color:#08080b;padding:4px 8px">NEXT EVENT</span><span style="color:#d4d3cd;padding:4px 0">DEC 05 · 20:00 MT</span></div>
+        <h3 style="margin:0;font:700 clamp(32px,4vw,52px)/.95 'Chakra Petch';text-transform:uppercase">Blackout Night II</h3>
+        <p style="margin:0;font:400 16px/1.5 'Chakra Petch';color:#c9c8c2;max-width:460px">The grid goes dark across all seven districts. No HUD, no respawns, double rep. Last runner standing takes the Crown.</p>
+        <div class="ed-cd" role="timer" aria-label="Time until Blackout Night II" style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;align-items:center;min-width:72px;padding:12px 10px;background:rgba(8,8,11,.7);border:1px solid #3a3a44"><span style="font:700 34px/1 'Chakra Petch';font-variant-numeric:tabular-nums">{{ cdD }}</span><span style="font:500 10px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2;margin-top:6px">DAYS</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;min-width:72px;padding:12px 10px;background:rgba(8,8,11,.7);border:1px solid #3a3a44"><span style="font:700 34px/1 'Chakra Petch';font-variant-numeric:tabular-nums">{{ cdH }}</span><span style="font:500 10px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2;margin-top:6px">HRS</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;min-width:72px;padding:12px 10px;background:rgba(8,8,11,.7);border:1px solid #3a3a44"><span style="font:700 34px/1 'Chakra Petch';font-variant-numeric:tabular-nums">{{ cdM }}</span><span style="font:500 10px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2;margin-top:6px">MIN</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;min-width:72px;padding:12px 10px;background:rgba(8,8,11,.7);border:1px solid #ff2a6d"><span style="font:700 34px/1 'Chakra Petch';font-variant-numeric:tabular-nums;color:#ff2a6d">{{ cdS }}</span><span style="font:500 10px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2;margin-top:6px">SEC</span></div>
+        </div>
+      </div>
+    </article>
+    <div style="display:flex;flex-direction:column;border:1px solid #26262e;background:#101015">
+      <sc-for list="{{ events }}" as="ev" hint-placeholder-count="3">
+        <div style="display:flex;gap:20px;align-items:center;padding:22px clamp(16px,2.4vw,28px);border-bottom:1px solid #26262e;flex-wrap:wrap">
+          <div style="flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;width:68px;height:72px;border:1px solid #3a3a44"><span style="font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:#a9a8b2">{{ ev.month }}</span><span style="font:700 30px/1 'Chakra Petch'">{{ ev.day }}</span></div>
+          <div style="flex:1 1 180px;min-width:0;display:flex;flex-direction:column;gap:6px">
+            <span style="font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:{{ ev.tagColor }}">{{ ev.tag }}</span>
+            <span style="font:700 21px/1.15 'Chakra Petch';text-transform:uppercase">{{ ev.title }}</span>
+            <span style="font:400 14px/1.4 'Chakra Petch';color:#a9a8b2">{{ ev.meta }}</span>
+          </div>
+          <button onClick="{{ ev.toggle }}" aria-pressed="{{ ev.pressed }}" style="flex:none;background:{{ ev.btnBg }};color:{{ ev.btnFg }};border:1px solid {{ ev.btnBorder }};font:600 13px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:11px 16px;cursor:pointer;min-width:150px" style-hover="border-color:#2de2e6">{{ ev.btnLabel }}</button>
+        </div>
+      </sc-for>
+      <a href="#events" style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding:22px clamp(16px,2.4vw,28px);font:600 15px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase">Full event calendar <span style="color:#ff2a6d">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding:clamp(64px,10vw,128px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <h2 class="ed-glitch ed-gd3" data-text="Made by runners" style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Made by runners</h2>
+      <p style="margin:0;font:400 16px/1.5 'Chakra Petch';color:#a9a8b2;max-width:520px">This week's picks from the fan art channel. Tag <span style="color:#2de2e6">#EvilDeathArt</span> to get featured.</p>
+    </div>
+    <a href="#gallery" style="display:flex;align-items:center;gap:10px;font:600 15px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid #ff2a6d;padding-bottom:6px">Submit your art <span style="color:#ff2a6d">→</span></a>
+  </div>
+  <div class="ed-gallery">
+    <sc-for list="{{ art }}" as="a" hint-placeholder-count="6">
+      <figure style="position:relative;background:#101015;border:1px solid #26262e">
+        <img src="{{ a.src }}" alt="{{ a.alt }}" loading="lazy" style="display:block;width:100%;height:auto">
+        <figcaption style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px">
+          <span style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font:600 16px/1.2 'Chakra Petch'">{{ a.title }}</span><span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">{{ a.handle }}</span></span>
+          <button onClick="{{ a.toggle }}" aria-pressed="{{ a.pressed }}" aria-label="{{ a.likeLabel }}" style="flex:none;display:flex;align-items:center;gap:8px;background:none;border:1px solid {{ a.likeBorder }};color:{{ a.likeColor }};font:500 13px 'IBM Plex Mono';padding:8px 12px;cursor:pointer" style-hover="border-color:#ff2a6d">{{ a.heart }} {{ a.likes }}</button>
+        </figcaption>
+      </figure>
+    </sc-for>
+  </div>
+</section>
+
+<!-- LEADERBOARD -->
+<section id="leaderboard" style="padding:clamp(64px,10vw,128px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px">
+    <h2 class="ed-glitch ed-gd4" data-text="Most wanted" style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Most wanted</h2>
+    <div role="group" aria-label="Leaderboard period" style="display:flex;border:1px solid #3a3a44">
+      <button onClick="{{ showSeason }}" aria-pressed="{{ seasonPressed }}" style="background:{{ seasonBg }};color:{{ seasonFg }};border:0;font:600 13px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:12px 18px;cursor:pointer">Season 01</button>
+      <button onClick="{{ showWeekly }}" aria-pressed="{{ weeklyPressed }}" style="background:{{ weeklyBg }};color:{{ weeklyFg }};border:0;font:600 13px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:12px 18px;cursor:pointer">This week</button>
+    </div>
+  </div>
+  <div style="overflow-x:auto;border:1px solid #26262e;background:#101015">
+    <table style="width:100%;min-width:520px;border-collapse:collapse;font:400 15px 'Chakra Petch'">
+      <thead>
+        <tr style="text-align:left;font:500 11px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96">
+          <th scope="col" style="padding:16px 20px;border-bottom:1px solid #26262e;font-weight:500;width:80px">RANK</th>
+          <th scope="col" style="padding:16px 20px;border-bottom:1px solid #26262e;font-weight:500">RUNNER</th>
+          <th scope="col" class="ed-lb-hide" style="padding:16px 20px;border-bottom:1px solid #26262e;font-weight:500">SYNDICATE</th>
+          <th scope="col" style="padding:16px 20px;border-bottom:1px solid #26262e;font-weight:500;text-align:right">KILLS</th>
+          <th scope="col" style="padding:16px 20px;border-bottom:1px solid #26262e;font-weight:500;text-align:right">BOUNTY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <sc-for list="{{ board }}" as="r" hint-placeholder-count="8">
+          <tr style="border-bottom:1px solid #1d1d24">
+            <td style="padding:16px 20px;font:700 22px 'Chakra Petch';color:{{ r.rankColor }}">{{ r.rank }}</td>
+            <td style="padding:16px 20px"><span style="display:flex;align-items:center;gap:12px"><span aria-hidden="true" style="flex:none;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:{{ r.avBg }};color:#08080b;font:700 15px 'Chakra Petch';clip-path:polygon(0 0,100% 0,100% 70%,70% 100%,0 100%)">{{ r.initial }}</span><span style="font:600 17px 'Chakra Petch';letter-spacing:.04em">{{ r.name }}</span></span></td>
+            <td class="ed-lb-hide" style="padding:16px 20px;font:500 13px 'IBM Plex Mono';color:#a9a8b2">{{ r.syn }}</td>
+            <td style="padding:16px 20px;text-align:right;font-variant-numeric:tabular-nums">{{ r.kills }}</td>
+            <td style="padding:16px 20px;text-align:right;font-variant-numeric:tabular-nums;color:#2de2e6">{{ r.bounty }}</td>
+          </tr>
+        </sc-for>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- CREATOR PROGRAM -->
+<section id="creators" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));border-bottom:1px solid #26262e">
+  <div style="display:flex;flex-direction:column;justify-content:center;gap:24px;padding:clamp(56px,8vw,112px) clamp(16px,4vw,48px)">
+    <div class="ed-flicker" style="font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">// CREATOR PROGRAM</div>
+    <h2 style="margin:0;font:700 clamp(40px,5.5vw,80px)/.9 'Chakra Petch';text-transform:uppercase;letter-spacing:-.02em">Stream it.<br><span style="color:#2de2e6">Get paid for it.</span></h2>
+    <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font:400 17px/1.4 'Chakra Petch';color:#c9c8c2">
+      <li style="display:flex;gap:14px"><span aria-hidden="true" style="color:#ff2a6d;font-family:'IBM Plex Mono'">01</span>Early access to every season and patch</li>
+      <li style="display:flex;gap:14px"><span aria-hidden="true" style="color:#ff2a6d;font-family:'IBM Plex Mono'">02</span>Exclusive creator skins and viewer drops</li>
+      <li style="display:flex;gap:14px"><span aria-hidden="true" style="color:#ff2a6d;font-family:'IBM Plex Mono'">03</span>Revenue share on your creator code</li>
+    </ul>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+      <a href="#creators" style="display:flex;align-items:center;gap:12px;background:#ff2a6d;color:#08080b;font:700 17px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:18px 30px;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))" style-hover="background:#ecebe6;color:#08080b">Apply now <span style="font-size:20px">→</span></a>
+      <span style="font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:#8a8a96">1K+ FOLLOWERS ON ANY PLATFORM</span>
+    </div>
+  </div>
+  <div style="position:relative;min-height:480px;overflow:hidden">
+    <div data-px="0.15" data-lim="0.12" style="position:absolute;left:0;right:0;top:-12%;bottom:-12%;will-change:transform"><image-slot id="creator-art" shape="rect" src="./img/community/fan-5.jpg" placeholder="Creator program art"></image-slot></div>
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(8,8,11,.85) 0%,rgba(8,8,11,0) 35%)"></div>
+  </div>
+</section>
+
+<!-- GUIDELINES -->
+<section style="padding:clamp(48px,7vw,88px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:32px">
+    <h2 style="margin:0;font:700 clamp(26px,3vw,36px)/1 'Chakra Petch';text-transform:uppercase">The code of the street</h2>
+    <a href="#top" style="font:500 13px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2" style-hover="color:#ff2a6d">READ FULL GUIDELINES →</a>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px">
+    <div style="display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:2px solid #ff2a6d"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">RULE 01</span><span style="font:700 22px 'Chakra Petch';text-transform:uppercase">Hunt syndicates, not people</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Trash talk the game, not the player. Harassment gets you flatlined.</span></div>
+    <div style="display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:2px solid #2de2e6"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6">RULE 02</span><span style="font:700 22px 'Chakra Petch';text-transform:uppercase">No cheats, no leaks</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Exploits get reported, not shared. Spoilers go behind tags.</span></div>
+    <div style="display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:2px solid #ecebe6"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ecebe6">RULE 03</span><span style="font:700 22px 'Chakra Petch';text-transform:uppercase">Report, don't retaliate</span><span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Mods are on watch around the clock. Let them handle it.</span></div>
+  </div>
+</section>
+
+<footer style="padding:64px clamp(16px,4vw,48px) 32px;display:flex;flex-direction:column;gap:56px">
+  <div class="ed-foot-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:40px">
+    <div class="ed-foot-brand" style="display:flex;flex-direction:column;gap:14px;grid-column:span 2;min-width:0">
+      <div style="display:flex;align-items:center;gap:10px;font:700 22px 'Chakra Petch';letter-spacing:.08em"><span style="width:14px;height:14px;background:#ff2a6d;clip-path:polygon(0 0,100% 0,100% 60%,60% 100%,0 100%)"></span>EVILDEATH</div>
+      <p style="margin:0;font:400 15px/1.5 'Chakra Petch';color:#8a8a96;max-width:320px">Get patch notes, events and drops straight to your inbox.</p>
+      <div style="display:flex;max-width:380px;border:1px solid #3a3a44">
+        <input type="email" aria-label="Email address" placeholder="you@email.com" style="flex:1;min-width:0;background:transparent;border:0;outline:none;color:#ecebe6;font:400 15px 'IBM Plex Mono';padding:14px 16px"></input>
+        <button style="background:#ecebe6;color:#08080b;border:0;font:700 13px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:0 18px;cursor:pointer" style-hover="background:#ff2a6d">Subscribe</button>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;font:400 15px 'Chakra Petch'"><div style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96;margin-bottom:4px">GAME</div><a href="index.html#features">Features</a><a href="index.html#news">News</a><a href="index.html#top">Media</a><a href="index.html#play">Play free</a></div>
+    <div style="display:flex;flex-direction:column;gap:12px;font:400 15px 'Chakra Petch'"><div style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96;margin-bottom:4px">COMMUNITY</div><a href="#events">Events</a><a href="#gallery">Fan art</a><a href="#leaderboard">Leaderboard</a><a href="#creators">Creators</a></div>
+    <div style="display:flex;flex-direction:column;gap:12px;font:400 15px 'Chakra Petch'"><div style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96;margin-bottom:4px">FOLLOW</div><a href="#channels">Discord</a><a href="#channels">YouTube</a><a href="#channels">X / Twitter</a><a href="#channels">Twitch</a></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #26262e;font:400 12px 'IBM Plex Mono';color:#6e6e7a">
+    <span>© 2026 EVILDEATH. ALL RIGHTS RESERVED.</span>
+    <div style="display:flex;gap:20px;flex-wrap:wrap"><a href="#top" style="color:#8a8a96">Privacy</a><a href="#top" style="color:#8a8a96">Terms</a><a href="#top" style="color:#8a8a96">Cookies</a><a href="#top" style="color:#8a8a96">Press</a></div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  state = {
+    menuOpen: false,
+    now: Date.now(),
+    online: 184302,
+    board: 'season',
+    reminded: {},
+    liked: {},
+  };
+  componentDidMount() {
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ menuOpen: false }); };
+    this.onResize = () => { if (this.state.menuOpen && window.innerWidth > 900) this.setState({ menuOpen: false }); };
+    window.addEventListener('keydown', this.onKey);
+    window.addEventListener('resize', this.onResize);
+    this.timer = setInterval(() => {
+      const drift = Math.round((Math.random() - 0.45) * 60);
+      this.setState((s) => ({ now: Date.now(), online: Math.max(150000, s.online + drift) }));
+    }, 1000);
+    let reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (reduce) return;
+    const tick = () => {
+      this.raf = 0;
+      const vh = window.innerHeight || 800;
+      const hero = document.getElementById('top');
+      const y = hero ? Math.max(0, -hero.getBoundingClientRect().top) : 0;
+      if (y < vh * 1.3) {
+        document.querySelectorAll('[data-ph]').forEach((el) => {
+          const s = parseFloat(el.getAttribute('data-ph')) || 0;
+          el.style.transform = 'translate3d(0,' + (y * s).toFixed(1) + 'px,0)';
+          const f = el.getAttribute('data-fade');
+          if (f) el.style.opacity = String(Math.max(0, 1 - y / (vh * parseFloat(f))));
+        });
+      }
+      document.querySelectorAll('[data-px]').forEach((el) => {
+        const p = el.parentElement.getBoundingClientRect();
+        if (p.bottom < -200 || p.top > vh + 200) return;
+        const s = parseFloat(el.getAttribute('data-px')) || 0;
+        const lim = p.height * (parseFloat(el.getAttribute('data-lim')) || 0.1);
+        const off = p.top + p.height / 2 - vh / 2;
+        const t = Math.max(-lim, Math.min(lim, -off * s));
+        el.style.transform = 'translate3d(0,' + t.toFixed(1) + 'px,0)';
+      });
+    };
+    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(tick); };
+    window.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', this.onScroll);
+    tick();
+  }
+  componentDidUpdate() {
+    document.body.style.overflow = this.state.menuOpen ? 'hidden' : '';
+  }
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.onKey);
+    window.removeEventListener('resize', this.onResize);
+    clearInterval(this.timer);
+    if (this.onScroll) {
+      window.removeEventListener('scroll', this.onScroll, { capture: true });
+      window.removeEventListener('resize', this.onScroll);
+    }
+    if (this.raf) cancelAnimationFrame(this.raf);
+    document.body.style.overflow = '';
+  }
+  renderVals() {
+    const pad = (n) => String(n).padStart(2, '0');
+    const target = Date.parse('2026-12-05T20:00:00-07:00');
+    let left = Math.max(0, Math.floor((target - this.state.now) / 1000));
+    const cdD = pad(Math.floor(left / 86400)); left %= 86400;
+    const cdH = pad(Math.floor(left / 3600)); left %= 3600;
+    const cdM = pad(Math.floor(left / 60));
+    const cdS = pad(left % 60);
+
+    const evs = [
+      { id: 'dev', month: 'DEC', day: '12', tag: 'DEV STREAM', tagColor: '#2de2e6', title: 'Sector 8: Ask the devs', meta: 'Twitch · 18:00 MT · 90 min' },
+      { id: 'cup', month: 'DEC', day: '19', tag: 'TOURNAMENT', tagColor: '#ff2a6d', title: 'Syndicate Cup finals', meta: '16 squads · $50K prize pool' },
+      { id: 's02', month: 'JAN', day: '09', tag: 'SHOWCASE', tagColor: '#ecebe6', title: 'Season 02 reveal', meta: 'YouTube premiere · 11:00 MT' },
+    ];
+    const events = evs.map((e) => {
+      const on = !!this.state.reminded[e.id];
+      return {
+        ...e,
+        pressed: on ? 'true' : 'false',
+        btnLabel: on ? 'Reminder set ✓' : 'Remind me',
+        btnBg: on ? '#2de2e6' : 'transparent',
+        btnFg: on ? '#08080b' : '#ecebe6',
+        btnBorder: on ? '#2de2e6' : '#4a4a55',
+        toggle: () => this.setState((s) => ({ reminded: { ...s.reminded, [e.id]: !s.reminded[e.id] } })),
+      };
+    });
+
+    const arts = [
+      { id: 'a1', src: './img/community/fan-1.jpg', title: 'Chrome Saint', handle: '@nightvoid', likes: 2841, alt: 'Duotone poster of the armored knight in magenta against a cyan wasteland' },
+      { id: 'a2', src: './img/community/fan-3.jpg', title: '8-Bit Wasteland', handle: '@pixelrunner', likes: 1907, alt: 'Pixel art version of the knight overlooking the ruined city, with an HP bar and PRESS START' },
+      { id: 'a3', src: './img/community/fan-4.jpg', title: 'Ink Study No. 7', handle: '@graphite.ghost', likes: 3312, alt: 'Pencil sketch of the knight from behind with red ink highlights on the armor' },
+      { id: 'a4', src: './img/community/fan-2.jpg', title: 'Halftone Hunter', handle: '@printshop_666', likes: 1254, alt: 'Halftone dot print of the knight in maroon ink on off-white paper' },
+      { id: 'a5', src: './img/community/fan-6.jpg', title: 'Signal Lost', handle: '@datamosh', likes: 986, alt: 'Glitch art of the gothic city with torn horizontal slices and RGB split' },
+      { id: 'a6', src: './img/community/fan-5.jpg', title: 'Outrun Reaper', handle: '@synthblade', likes: 4120, alt: 'Synthwave poster with the knight silhouetted against a striped neon sun' },
+    ];
+    const art = arts.map((a) => {
+      const on = !!this.state.liked[a.id];
+      return {
+        ...a,
+        likes: (a.likes + (on ? 1 : 0)).toLocaleString('en-US'),
+        heart: on ? '♥' : '♡',
+        pressed: on ? 'true' : 'false',
+        likeLabel: (on ? 'Unlike ' : 'Like ') + a.title,
+        likeColor: on ? '#ff2a6d' : '#a9a8b2',
+        likeBorder: on ? '#ff2a6d' : '#3a3a44',
+        toggle: () => this.setState((s) => ({ liked: { ...s.liked, [a.id]: !s.liked[a.id] } })),
+      };
+    });
+
+    const season = [
+      ['NULLVOID', 'VOSS SYNDICATE', '48,210', '¥ 9.94M'],
+      ['KESTREL', 'HOLLOW CROWN', '46,877', '¥ 9.12M'],
+      ['ASHMOUTH', 'RED CHAPEL', '45,031', '¥ 8.80M'],
+      ['VANTA-9', 'VOSS SYNDICATE', '41,566', '¥ 7.65M'],
+      ['MIRRORSHADE', 'GUTTER SAINTS', '39,402', '¥ 7.21M'],
+      ['SIXGUN', 'HOLLOW CROWN', '37,118', '¥ 6.90M'],
+      ['LOWTIDE', 'NEON ORPHANS', '35,940', '¥ 6.47M'],
+      ['CALIBER', 'RED CHAPEL', '34,275', '¥ 6.02M'],
+    ];
+    const weekly = [
+      ['MIRRORSHADE', 'GUTTER SAINTS', '3,402', '¥ 812K'],
+      ['ASHMOUTH', 'RED CHAPEL', '3,288', '¥ 790K'],
+      ['RIPCORD', 'NEON ORPHANS', '3,105', '¥ 744K'],
+      ['NULLVOID', 'VOSS SYNDICATE', '2,990', '¥ 701K'],
+      ['HEXA', 'IRON ABBEY', '2,876', '¥ 655K'],
+      ['KESTREL', 'HOLLOW CROWN', '2,701', '¥ 630K'],
+      ['STATIC', 'GUTTER SAINTS', '2,544', '¥ 598K'],
+      ['VANTA-9', 'VOSS SYNDICATE', '2,410', '¥ 561K'],
+    ];
+    const isSeason = this.state.board === 'season';
+    const avColors = ['#ff2a6d', '#2de2e6', '#ecebe6'];
+    const board = (isSeason ? season : weekly).map((r, i) => ({
+      rank: pad(i + 1),
+      rankColor: i === 0 ? '#ff2a6d' : i < 3 ? '#ecebe6' : '#6e6e7a',
+      initial: r[0][0],
+      avBg: avColors[i % 3],
+      name: r[0], syn: r[1], kills: r[2], bounty: r[3],
+    }));
+
+    return {
+      menuOpen: this.state.menuOpen,
+      menuExpanded: this.state.menuOpen ? 'true' : 'false',
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      online: this.state.online.toLocaleString('en-US'),
+      cdD, cdH, cdM, cdS,
+      events, art, board,
+      showSeason: () => this.setState({ board: 'season' }),
+      showWeekly: () => this.setState({ board: 'weekly' }),
+      seasonPressed: isSeason ? 'true' : 'false',
+      weeklyPressed: isSeason ? 'false' : 'true',
+      seasonBg: isSeason ? '#ecebe6' : 'transparent',
+      seasonFg: isSeason ? '#08080b' : '#ecebe6',
+      weeklyBg: isSeason ? 'transparent' : '#ecebe6',
+      weeklyFg: isSeason ? '#ecebe6' : '#08080b',
+    };
+  }
+}
+</script>
+</body>
+</html>

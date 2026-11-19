@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvilDeath — Support</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><script src="./image-slot.js"></script><style>html,body{margin:0;background:#08080b;color:#ecebe6;font-family:'Chakra Petch',sans-serif;-webkit-font-smoothing:antialiased}*{box-sizing:border-box}a{color:#ecebe6;text-decoration:none}a:hover{color:#ff2a6d}button{font-family:inherit}
+.ed-burger{display:none}.ed-menu-link:hover .ed-menu-arrow{color:#ff2a6d}
+@keyframes ed-glow{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes ed-kb{0%{transform:scale(1.03)}100%{transform:scale(1.1) translate(0,-1%)}}
+@keyframes ed-ember-a{0%{transform:translate(0,0);opacity:0}12%{opacity:1}100%{transform:translate(60px,-80vh);opacity:0}}
+@keyframes ed-ember-b{0%{transform:translate(0,0);opacity:0}12%{opacity:.9}100%{transform:translate(-50px,-70vh);opacity:0}}
+@keyframes ed-pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,42,109,.7)}70%{box-shadow:0 0 0 8px rgba(255,42,109,0)}}
+.ed-ember{position:absolute;bottom:-8px;border-radius:50%;background:#ff6a3d;box-shadow:0 0 6px 1px rgba(255,80,40,.85),0 0 14px 3px rgba(255,42,109,.35);opacity:0}
+.ed-live-dot{width:8px;height:8px;border-radius:50%;background:#ff2a6d;animation:ed-pulse 1.6s infinite}
+.ed-glitch{position:relative;animation:ed-gmain 5s steps(1) infinite}.ed-glitch::before,.ed-glitch::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;height:100%;white-space:pre-line;pointer-events:none;opacity:0}.ed-glitch::before{color:#2de2e6;animation:ed-g1 5s steps(1) infinite}.ed-glitch::after{color:#ff2a6d;animation:ed-g2 5s steps(1) infinite}.ed-glitch:hover,.ed-glitch:hover::before,.ed-glitch:hover::after{animation-duration:.9s}.ed-gd1,.ed-gd1::before,.ed-gd1::after{animation-delay:1.4s}.ed-gd2,.ed-gd2::before,.ed-gd2::after{animation-delay:2.7s}.ed-gd3,.ed-gd3::before,.ed-gd3::after{animation-delay:.6s}.ed-gd4,.ed-gd4::before,.ed-gd4::after{animation-delay:3.6s}
+@keyframes ed-gmain{0%,100%{transform:none;text-shadow:none}2%{transform:translate(3px,0) skewX(-6deg);text-shadow:-3px 0 rgba(45,226,230,.7),3px 0 rgba(255,42,109,.7)}4%{transform:translate(-3px,1px);text-shadow:none}6%{transform:skewX(4deg)}8%{transform:none}61%{transform:translate(-2px,0) skewX(4deg);text-shadow:2px 0 rgba(255,42,109,.7)}63%{transform:none;text-shadow:none}}
+@keyframes ed-g1{0%,100%{opacity:0;transform:none;clip-path:inset(0 0 0 0)}2%{opacity:.9;transform:translate(-8px,2px);clip-path:inset(8% 0 62% 0)}4%{opacity:.9;transform:translate(6px,-2px);clip-path:inset(55% 0 22% 0)}6%{opacity:.9;transform:translate(-4px,0);clip-path:inset(30% 0 48% 0)}8%{opacity:0}61%{opacity:.85;transform:translate(5px,0);clip-path:inset(72% 0 6% 0)}63%{opacity:0}}
+@keyframes ed-g2{0%,100%{opacity:0;transform:none;clip-path:inset(0 0 0 0)}2%{opacity:.9;transform:translate(7px,-1px);clip-path:inset(40% 0 35% 0)}4%{opacity:.9;transform:translate(-6px,2px);clip-path:inset(12% 0 70% 0)}6%{opacity:.9;transform:translate(3px,0);clip-path:inset(78% 0 4% 0)}8%{opacity:0}61%{opacity:.85;transform:translate(-5px,0);clip-path:inset(20% 0 60% 0)}63%{opacity:0}}
+@keyframes ed-flick{0%,100%{opacity:1}3%{opacity:.15}4%{opacity:1}6%{opacity:.4}7%{opacity:1}52%{opacity:1}53%{opacity:.25}54%{opacity:1}}.ed-flicker{animation:ed-flick 3.7s steps(1) infinite}
+.ed-gallery{columns:3 300px;column-gap:20px}.ed-gallery>figure{break-inside:avoid;margin:0 0 20px}
+.ed-card-arrow{transition:transform .2s}.ed-channel:hover .ed-card-arrow{transform:translateX(4px)}
+@keyframes ed-scan{0%{top:-2%}100%{top:102%}}
+@media (max-width:700px){.ed-sup-copy{align-items:stretch!important;text-align:left!important}.ed-sup-copy>*{align-self:flex-start}.ed-sup-copy form{align-self:stretch}.ed-faq-a{padding:0 0 22px!important}}
+@media (min-width:901px){.ed-menu{display:none!important}}
+@media (max-width:900px){.ed-nav,.ed-lang,.ed-signin{display:none!important}.ed-burger{display:flex!important}}
+@media (max-width:420px){.ed-headcta{padding:9px 14px!important;font-size:12px!important}.ed-logo{font-size:17px!important}}
+@media (max-width:640px){.ed-hero{min-height:100svh!important}.ed-hero-ctas>*{flex:1 1 100%;justify-content:center}.ed-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ed-cd{gap:8px!important}.ed-foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:32px!important}.ed-foot-brand{grid-column:1/-1!important}.ed-lb-hide{display:none!important}}
+@media (prefers-reduced-motion:reduce){.ed-anim,.ed-anim *,.ed-glitch,.ed-glitch::before,.ed-glitch::after,.ed-flicker,.ed-live-dot{animation:none!important}}
+</style></helmet>
+<div style="min-height:100vh;background:#08080b">
+
+<header style="position:sticky;top:0;z-index:20;background:rgba(8,8,11,.8);backdrop-filter:blur(10px);border-bottom:1px solid #26262e">
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,2vw,24px);padding:0 clamp(16px,4vw,48px);height:68px">
+    <div style="display:flex;align-items:center;gap:clamp(16px,3vw,40px);flex:1 1 auto;min-width:0">
+      <a href="index.html" class="ed-logo" style="flex:none;display:flex;align-items:center;gap:10px;font:700 20px 'Chakra Petch';letter-spacing:.08em"><span style="width:14px;height:14px;background:#ff2a6d;clip-path:polygon(0 0,100% 0,100% 60%,60% 100%,0 100%)"></span>EVILDEATH</a>
+      <nav class="ed-nav" aria-label="Main" style="display:flex;flex-wrap:wrap;height:22px;overflow:hidden;min-width:0;column-gap:clamp(14px,2vw,28px);font:500 14px/20px 'Chakra Petch';letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">
+        <a href="index.html#features">Game</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#top">Media</a>
+        <a href="community.html">Community</a>
+        <a href="#top" aria-current="page" style="color:#2de2e6;border-bottom:2px solid #2de2e6">Support</a>
+      </nav>
+    </div>
+    <div style="display:flex;align-items:center;gap:clamp(12px,1.6vw,20px);flex:none;white-space:nowrap">
+      <span class="ed-lang" style="font:500 12px 'IBM Plex Mono';color:#8a8a96">EN ▾</span>
+      <a href="#top" class="ed-signin" style="font:500 14px 'Chakra Petch';letter-spacing:.06em;text-transform:uppercase">Sign in</a>
+      <a href="index.html#play" class="ed-headcta" style="background:#ff2a6d;color:#08080b;font:700 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:11px 20px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))" style-hover="background:#ecebe6;color:#08080b">Play free</a>
+      <button class="ed-burger" onClick="{{ openMenu }}" aria-label="Open menu" aria-expanded="{{ menuExpanded }}" style="width:44px;height:44px;margin-right:-8px;background:none;border:0;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:0" style-hover="opacity:.75">
+        <span aria-hidden="true" style="display:block;width:24px;height:2px;background:#ecebe6"></span>
+        <span aria-hidden="true" style="display:block;width:24px;height:2px;background:#ecebe6"></span>
+        <span aria-hidden="true" style="display:block;width:16px;height:2px;background:#ff2a6d;align-self:flex-end;margin-right:10px"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div class="ed-menu" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed;inset:0;z-index:40;background:#08080b;display:flex;flex-direction:column;overflow-y:auto">
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px)"></div>
+    <div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,48px);height:68px;flex:none;border-bottom:1px solid #26262e">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;font:700 20px 'Chakra Petch';letter-spacing:.08em"><span style="width:14px;height:14px;background:#ff2a6d;clip-path:polygon(0 0,100% 0,100% 60%,60% 100%,0 100%)"></span>EVILDEATH</a>
+      <button onClick="{{ closeMenu }}" aria-label="Close menu" style="width:44px;height:44px;margin-right:-8px;background:none;border:0;cursor:pointer;color:#ecebe6;font:400 30px/1 'Chakra Petch';display:flex;align-items:center;justify-content:center" style-hover="color:#ff2a6d">✕</button>
+    </div>
+    <nav aria-label="Mobile" style="position:relative;flex:1 0 auto;display:flex;flex-direction:column;padding:24px clamp(16px,4vw,48px)">
+      <a href="index.html#features" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">01</span>Game<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="index.html#news" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">02</span>News<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="index.html#top" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">03</span>Media<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="community.html" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">04</span>Community<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#4a4a55">→</span></a>
+      <a href="#top" onClick="{{ closeMenu }}" aria-current="page" class="ed-menu-link" style="display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid #26262e;font:700 clamp(36px,10vw,56px)/1 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em;color:#2de2e6"><span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">05</span>Support<span class="ed-menu-arrow" aria-hidden="true" style="margin-left:auto;font-size:.6em;color:#2de2e6">●</span></a>
+    </nav>
+    <div style="position:relative;flex:none;display:flex;flex-direction:column;gap:20px;padding:24px clamp(16px,4vw,48px) 32px">
+      <a href="index.html#play" style="display:flex;align-items:center;justify-content:center;gap:14px;background:#ff2a6d;color:#08080b;font:700 18px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:20px 24px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))" style-hover="background:#ecebe6;color:#08080b">Play free <span style="font-size:22px">→</span></a>
+      <div style="display:flex;justify-content:space-between;align-items:center;font:500 13px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2">
+        <a href="#top" onClick="{{ closeMenu }}" style="font:600 15px 'Chakra Petch';letter-spacing:.06em;text-transform:uppercase">Sign in</a>
+        <span>EN ▾</span>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<!-- HERO -->
+<section id="top" class="ed-hero" style="position:relative;min-height:78vh;margin-top:-68px;overflow:hidden;border-bottom:1px solid #26262e;display:flex;flex-direction:column;justify-content:flex-end">
+  <div class="ed-anim" data-ph="0.4" style="position:absolute;inset:0;overflow:hidden;will-change:transform">
+    <img src="./img/support/support-hero.jpg" alt="The armored knight under a diagnostic reticle scan, with a cyan scan line sweeping across the ruined city" style="display:block;width:100%;height:100%;object-fit:cover;object-position:28% center;animation:ed-kb 24s ease-in-out infinite alternate">
+  </div>
+  <div class="ed-anim" aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;overflow:hidden">
+    <div style="position:absolute;left:0;right:0;height:2px;background:#2de2e6;box-shadow:0 0 18px 4px rgba(45,226,230,.45);opacity:.55;animation:ed-scan 6s linear infinite"></div>
+  </div>
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px)"></div>
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,8,11,.7) 0%,rgba(8,8,11,0) 30%,rgba(8,8,11,.15) 55%,rgba(8,8,11,.96) 100%),linear-gradient(270deg,rgba(8,8,11,.8) 0%,rgba(8,8,11,0) 65%)"></div>
+
+  <div class="ed-sup-copy" data-ph="-0.15" data-fade="0.7" style="position:relative;align-self:flex-end;width:100%;max-width:720px;display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:20px;padding:clamp(120px,18vh,180px) clamp(16px,4vw,48px) clamp(40px,7vh,72px)">
+    <div class="ed-flicker" style="display:flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6">// SUPPORT TERMINAL</div>
+    <h1 class="ed-glitch" data-text="Need backup,&#10;runner?" style="margin:0;font:700 clamp(48px,8vw,120px)/.86 'Chakra Petch';letter-spacing:-.02em;text-transform:uppercase">Need backup,<br><span style="color:#2de2e6">runner?</span></h1>
+    <form onSubmit="{{ heroSearch }}" role="search" style="display:flex;width:100%;max-width:560px;background:rgba(8,8,11,.75);backdrop-filter:blur(8px);border:1px solid #4a4a55">
+      <label for="sup-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search help articles</label>
+      <span aria-hidden="true" style="display:flex;align-items:center;padding:0 0 0 18px;font:500 14px 'IBM Plex Mono';color:#2de2e6">&gt;_</span>
+      <input id="sup-search" type="search" value="{{ query }}" onChange="{{ onQuery }}" placeholder="Search: refunds, crash, 2FA, ban appeal…" autocomplete="off" style="flex:1;min-width:0;background:transparent;border:0;outline:none;color:#ecebe6;font:400 16px 'IBM Plex Mono';padding:18px 14px"></input>
+      <button type="submit" style="flex:none;background:#2de2e6;color:#08080b;border:0;font:700 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:0 22px;cursor:pointer" style-hover="background:#ecebe6">Search</button>
+    </form>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;font:500 12px 'IBM Plex Mono';letter-spacing:.06em;color:#a9a8b2">
+      <span>POPULAR:</span>
+      <button onClick="{{ quick1 }}" style="background:none;border:0;padding:0;color:#ecebe6;font:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:#4a4a55;text-underline-offset:4px" style-hover="color:#2de2e6">refund</button>
+      <button onClick="{{ quick2 }}" style="background:none;border:0;padding:0;color:#ecebe6;font:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:#4a4a55;text-underline-offset:4px" style-hover="color:#2de2e6">crash</button>
+      <button onClick="{{ quick3 }}" style="background:none;border:0;padding:0;color:#ecebe6;font:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:#4a4a55;text-underline-offset:4px" style-hover="color:#2de2e6">2FA</button>
+      <button onClick="{{ quick4 }}" style="background:none;border:0;padding:0;color:#ecebe6;font:inherit;cursor:pointer;text-decoration:underline;text-decoration-color:#4a4a55;text-underline-offset:4px" style-hover="color:#2de2e6">ban</button>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS -->
+<section id="status" style="padding:clamp(56px,8vw,104px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <h2 class="ed-glitch ed-gd1" data-text="Server status" style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Server status</h2>
+      <p style="margin:0;display:flex;align-items:center;gap:10px;font:500 14px 'IBM Plex Mono';color:#d4d3cd"><span aria-hidden="true" style="width:10px;height:10px;background:#f5b942;clip-path:polygon(50% 0,100% 100%,0 100%)"></span>Minor issues — matchmaking delays in Asia</p>
+    </div>
+    <div style="font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:#8a8a96">UPDATED {{ updated }} · AUTO-REFRESH</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:#26262e;border:1px solid #26262e">
+    <sc-for list="{{ regions }}" as="r" hint-placeholder-count="5">
+      <div style="display:flex;flex-direction:column;gap:14px;padding:20px 22px;background:#101015">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span style="font:600 17px 'Chakra Petch';text-transform:uppercase;letter-spacing:.04em">{{ r.name }}</span><span style="font:500 11px 'IBM Plex Mono';color:#8a8a96">{{ r.code }}</span></div>
+        <div style="display:flex;align-items:center;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.08em;color:{{ r.color }}"><span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:{{ r.color }};box-shadow:0 0 8px {{ r.color }}"></span>{{ r.label }}</div>
+        <div style="display:flex;align-items:flex-end;gap:3px;height:28px" aria-hidden="true">
+          <sc-for list="{{ r.bars }}" as="b" hint-placeholder-count="20"><span style="flex:1;height:{{ b.h }};background:{{ b.c }}"></span></sc-for>
+        </div>
+        <div style="display:flex;justify-content:space-between;font:500 12px 'IBM Plex Mono';color:#a9a8b2"><span>PING</span><span style="color:#ecebe6;font-variant-numeric:tabular-nums">{{ r.ping }} ms</span></div>
+      </div>
+    </sc-for>
+  </div>
+  <div style="display:flex;gap:10px 28px;flex-wrap:wrap;margin-top:20px;font:500 12px 'IBM Plex Mono';letter-spacing:.06em;color:#a9a8b2">
+    <span style="display:flex;align-items:center;gap:8px"><span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:#2de2e6"></span>LOGIN · OPERATIONAL</span>
+    <span style="display:flex;align-items:center;gap:8px"><span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:#2de2e6"></span>STORE · OPERATIONAL</span>
+    <span style="display:flex;align-items:center;gap:8px"><span aria-hidden="true" style="width:8px;height:8px;border-radius:50%;background:#2de2e6"></span>CROSS-SAVE · OPERATIONAL</span>
+    <span style="display:flex;align-items:center;gap:8px"><span aria-hidden="true" style="width:8px;height:8px;background:#f5b942;clip-path:polygon(50% 0,100% 100%,0 100%)"></span>MATCHMAKING · DEGRADED</span>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="topics" style="padding:clamp(56px,8vw,104px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px">
+    <h2 class="ed-glitch ed-gd2" data-text="Browse by topic" style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Browse by topic</h2>
+    <div style="font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96">02 // HELP CENTER</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+    <sc-for list="{{ topics }}" as="t" hint-placeholder-count="6">
+      <button onClick="{{ t.pick }}" aria-pressed="{{ t.pressed }}" class="ed-channel" style="display:flex;flex-direction:column;align-items:flex-start;gap:22px;text-align:left;padding:24px;background:{{ t.bg }};border:1px solid {{ t.border }};border-left:3px solid {{ t.accent }};color:#ecebe6;cursor:pointer;min-height:180px" style-hover="border-color:#4a4a55;background:#14141a">
+        <span style="display:flex;justify-content:space-between;align-self:stretch;font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:{{ t.accent }}"><span>{{ t.num }}</span><span class="ed-card-arrow" aria-hidden="true">→</span></span>
+        <span style="display:flex;flex-direction:column;gap:8px;margin-top:auto">
+          <span style="font:700 24px/1.05 'Chakra Petch';text-transform:uppercase">{{ t.title }}</span>
+          <span style="font:400 15px/1.45 'Chakra Petch';color:#a9a8b2">{{ t.desc }}</span>
+          <span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">{{ t.count }}</span>
+        </span>
+      </button>
+    </sc-for>
+  </div>
+</section>
+
+<!-- FAQ + KNOWN ISSUES -->
+<section id="faq" style="padding:clamp(56px,8vw,104px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,64px);align-items:flex-start">
+    <div style="flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
+        <h2 class="ed-glitch ed-gd3" data-text="Common questions" style="margin:0;font:700 clamp(32px,4.4vw,56px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Common questions</h2>
+        <sc-if value="{{ filtering }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ clearFilters }}" style="background:none;border:1px solid #4a4a55;color:#ecebe6;font:500 12px 'IBM Plex Mono';letter-spacing:.08em;padding:8px 12px;cursor:pointer" style-hover="border-color:#ff2a6d">{{ filterLabel }} ✕</button>
+        </sc-if>
+      </div>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #26262e">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+          <div style="border-bottom:1px solid #26262e">
+            <h3 style="margin:0">
+              <button onClick="{{ f.toggle }}" aria-expanded="{{ f.expanded }}" style="display:flex;align-items:center;gap:18px;width:100%;background:none;border:0;color:#ecebe6;text-align:left;padding:22px 0;cursor:pointer" style-hover="color:#2de2e6">
+                <span style="flex:none;font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:{{ f.accent }};width:96px">{{ f.cat }}</span>
+                <span style="flex:1;font:600 19px/1.3 'Chakra Petch'">{{ f.q }}</span>
+                <span aria-hidden="true" style="flex:none;font:400 24px/1 'Chakra Petch';color:{{ f.signColor }}">{{ f.sign }}</span>
+              </button>
+            </h3>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 40px 24px 114px;font:400 16px/1.6 'Chakra Petch';color:#c9c8c2;white-space:pre-line" class="ed-faq-a">{{ f.a }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+        <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:12px;padding:32px 0;border-bottom:1px solid #26262e">
+            <span style="font:500 13px 'IBM Plex Mono';letter-spacing:.1em;color:#ff2a6d">// NO MATCHES</span>
+            <span style="font:400 17px/1.5 'Chakra Petch';color:#c9c8c2">Nothing in the archives for that. <a href="#contact" style="color:#2de2e6;text-decoration:underline;text-underline-offset:4px">Open a ticket</a> and a human will dig in.</span>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+
+    <aside aria-labelledby="known-h" style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;border:1px solid #26262e;background:#101015">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid #26262e">
+        <h2 id="known-h" style="margin:0;font:700 20px 'Chakra Petch';text-transform:uppercase;letter-spacing:.04em">Known issues</h2>
+        <span style="font:500 11px 'IBM Plex Mono';letter-spacing:.1em;color:#8a8a96">PATCH 1.4</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding:20px 22px;border-bottom:1px solid #26262e">
+        <span style="align-self:flex-start;font:500 11px 'IBM Plex Mono';letter-spacing:.1em;color:#08080b;background:#f5b942;padding:3px 7px">INVESTIGATING</span>
+        <span style="font:600 16px/1.35 'Chakra Petch'">Matchmaking queues over 5 min in Asia-Pacific</span>
+        <span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">UPDATED 14 MIN AGO</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding:20px 22px;border-bottom:1px solid #26262e">
+        <span style="align-self:flex-start;font:500 11px 'IBM Plex Mono';letter-spacing:.1em;color:#08080b;background:#2de2e6;padding:3px 7px">FIX IN 1.4.1</span>
+        <span style="font:600 16px/1.35 'Chakra Petch'">Netrunner overclock drains stamina twice</span>
+        <span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">HOTFIX · NOV 21</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding:20px 22px;border-bottom:1px solid #26262e">
+        <span style="align-self:flex-start;font:500 11px 'IBM Plex Mono';letter-spacing:.1em;color:#08080b;background:#2de2e6;padding:3px 7px">FIX IN 1.4.1</span>
+        <span style="font:600 16px/1.35 'Chakra Petch'">Razor Trident mod slot B resets after relog</span>
+        <span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">HOTFIX · NOV 21</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;padding:20px 22px;border-bottom:1px solid #26262e">
+        <span style="align-self:flex-start;font:500 11px 'IBM Plex Mono';letter-spacing:.1em;color:#ecebe6;border:1px solid #4a4a55;padding:2px 7px">RESOLVED</span>
+        <span style="font:600 16px/1.35 'Chakra Petch';color:#a9a8b2;text-decoration:line-through;text-decoration-color:#4a4a55">Store purchases not appearing on PS5</span>
+        <span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">NOV 17</span>
+      </div>
+      <a href="index.html#news" style="display:flex;justify-content:space-between;padding:18px 22px;font:600 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase">Patch notes <span style="color:#ff2a6d">→</span></a>
+    </aside>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding:clamp(56px,8vw,104px) clamp(16px,4vw,48px);border-bottom:1px solid #26262e">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px">
+    <h2 class="ed-glitch ed-gd4" data-text="Talk to a human" style="margin:0;font:700 clamp(36px,5vw,64px)/.95 'Chakra Petch';text-transform:uppercase;letter-spacing:-.01em">Talk to a human</h2>
+    <div style="font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96">04 // CONTACT</div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:stretch">
+    <div style="flex:999 1 560px;min-width:0;border:1px solid #26262e;background:#101015;padding:clamp(20px,3vw,36px)">
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div role="status" style="display:flex;flex-direction:column;gap:18px;min-height:420px;justify-content:center">
+          <span style="font:500 13px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6">// TRANSMISSION RECEIVED</span>
+          <span style="font:700 clamp(32px,4vw,48px)/1 'Chakra Petch';text-transform:uppercase">Ticket {{ ticketId }}</span>
+          <span style="font:400 17px/1.55 'Chakra Petch';color:#c9c8c2;max-width:480px">We've logged your request and sent a copy to <span style="color:#ecebe6">{{ form.email }}</span>. Average first reply right now: <span style="color:#2de2e6">under 4 hours</span>.</span>
+          <button onClick="{{ resetForm }}" style="align-self:flex-start;background:none;border:1px solid #4a4a55;color:#ecebe6;font:600 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:14px 20px;cursor:pointer" style-hover="border-color:#2de2e6">Open another ticket</button>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submit }}" novalidate style="display:flex;flex-direction:column;gap:20px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h3 style="margin:0;font:700 24px 'Chakra Petch';text-transform:uppercase">Submit a ticket</h3><span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">AVG. REPLY &lt; 4 HRS</span></div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+            <label style="display:flex;flex-direction:column;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2">TOPIC
+              <select value="{{ form.topic }}" onChange="{{ setTopic }}" style="background:#08080b;border:1px solid #3a3a44;color:#ecebe6;font:400 15px 'Chakra Petch';padding:13px 12px;outline-color:#2de2e6">
+                <option value="account">Account &amp; security</option><option value="billing">Billing &amp; purchases</option><option value="tech">Technical issue</option><option value="gameplay">Gameplay &amp; progression</option><option value="bans">Ban appeal</option><option value="bug">Bug report</option>
+              </select>
+            </label>
+            <label style="display:flex;flex-direction:column;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2">PLATFORM
+              <select value="{{ form.platform }}" onChange="{{ setPlatform }}" style="background:#08080b;border:1px solid #3a3a44;color:#ecebe6;font:400 15px 'Chakra Petch';padding:13px 12px;outline-color:#2de2e6">
+                <option value="pc">PC</option><option value="ps5">PlayStation 5</option><option value="xbox">Xbox Series X|S</option>
+              </select>
+            </label>
+          </div>
+          <label style="display:flex;flex-direction:column;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2">EMAIL
+            <input type="email" value="{{ form.email }}" onChange="{{ setEmail }}" placeholder="you@email.com" aria-invalid="{{ emailInvalid }}" style="background:#08080b;border:1px solid {{ emailBorder }};color:#ecebe6;font:400 15px 'IBM Plex Mono';padding:13px 12px;outline-color:#2de2e6"></input>
+          </label>
+          <sc-if value="{{ showEmailErr }}" hint-placeholder-val="{{ false }}"><span role="alert" style="margin-top:-12px;font:500 12px 'IBM Plex Mono';color:#ff5c8a">Enter a valid email so we can reply.</span></sc-if>
+          <label style="display:flex;flex-direction:column;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.1em;color:#a9a8b2">WHAT HAPPENED?
+            <textarea value="{{ form.msg }}" onChange="{{ setMsg }}" rows="5" placeholder="Steps, error codes, time it happened…" aria-invalid="{{ msgInvalid }}" style="background:#08080b;border:1px solid {{ msgBorder }};color:#ecebe6;font:400 15px/1.5 'Chakra Petch';padding:13px 12px;resize:vertical;outline-color:#2de2e6"></textarea>
+          </label>
+          <sc-if value="{{ showMsgErr }}" hint-placeholder-val="{{ false }}"><span role="alert" style="margin-top:-12px;font:500 12px 'IBM Plex Mono';color:#ff5c8a">Give us at least a sentence to work with.</span></sc-if>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+            <span style="font:500 12px 'IBM Plex Mono';color:#8a8a96">Logged in? We attach your runner ID automatically.</span>
+            <button type="submit" style="display:flex;align-items:center;gap:12px;background:#ff2a6d;color:#08080b;border:0;font:700 16px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:17px 28px;cursor:pointer;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))" style-hover="background:#ecebe6">Send ticket <span style="font-size:20px">→</span></button>
+          </div>
+        </form>
+      </sc-if>
+    </div>
+    <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
+      <div style="flex:1;display:flex;flex-direction:column;gap:14px;padding:24px;border:1px solid #26262e;border-top:3px solid #2de2e6;background:#101015">
+        <span style="display:flex;align-items:center;gap:8px;font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#2de2e6"><span class="ed-live-dot" aria-hidden="true" style="background:#2de2e6;animation:none;box-shadow:0 0 8px #2de2e6"></span>LIVE CHAT · ONLINE</span>
+        <span style="font:700 24px/1.05 'Chakra Petch';text-transform:uppercase">Chat with an agent</span>
+        <span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Every day, 06:00–24:00 MT. Current wait about {{ chatWait }} min.</span>
+        <a href="#contact" style="margin-top:auto;display:flex;justify-content:space-between;font:600 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding-top:14px;border-top:1px solid #26262e">Start chat <span style="color:#2de2e6">→</span></a>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:14px;padding:24px;border:1px solid #26262e;border-top:3px solid #ff2a6d;background:#101015">
+        <span style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#ff2a6d">COMMUNITY HELP</span>
+        <span style="font:700 24px/1.05 'Chakra Petch';text-transform:uppercase">Ask the Undercity</span>
+        <span style="font:400 15px/1.5 'Chakra Petch';color:#a9a8b2">Veteran runners and mods answer build and gameplay questions on Discord.</span>
+        <a href="community.html#channels" style="margin-top:auto;display:flex;justify-content:space-between;font:600 14px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding-top:14px;border-top:1px solid #26262e">Open #help-desk <span style="color:#ff2a6d">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:64px clamp(16px,4vw,48px) 32px;display:flex;flex-direction:column;gap:56px">
+  <div class="ed-foot-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:40px">
+    <div class="ed-foot-brand" style="display:flex;flex-direction:column;gap:14px;grid-column:span 2;min-width:0">
+      <div style="display:flex;align-items:center;gap:10px;font:700 22px 'Chakra Petch';letter-spacing:.08em"><span style="width:14px;height:14px;background:#ff2a6d;clip-path:polygon(0 0,100% 0,100% 60%,60% 100%,0 100%)"></span>EVILDEATH</div>
+      <p style="margin:0;font:400 15px/1.5 'Chakra Petch';color:#8a8a96;max-width:320px">Get patch notes, events and drops straight to your inbox.</p>
+      <div style="display:flex;max-width:380px;border:1px solid #3a3a44">
+        <input type="email" aria-label="Email address" placeholder="you@email.com" style="flex:1;min-width:0;background:transparent;border:0;outline:none;color:#ecebe6;font:400 15px 'IBM Plex Mono';padding:14px 16px"></input>
+        <button style="background:#ecebe6;color:#08080b;border:0;font:700 13px 'Chakra Petch';letter-spacing:.08em;text-transform:uppercase;padding:0 18px;cursor:pointer" style-hover="background:#ff2a6d">Subscribe</button>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;font:400 15px 'Chakra Petch'"><div style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96;margin-bottom:4px">GAME</div><a href="index.html#features">Features</a><a href="index.html#news">News</a><a href="index.html#top">Media</a><a href="index.html#play">Play free</a></div>
+    <div style="display:flex;flex-direction:column;gap:12px;font:400 15px 'Chakra Petch'"><div style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96;margin-bottom:4px">SUPPORT</div><a href="#topics">Help center</a><a href="#status">Server status</a><a href="#faq">Known issues</a><a href="#contact">Contact us</a></div>
+    <div style="display:flex;flex-direction:column;gap:12px;font:400 15px 'Chakra Petch'"><div style="font:500 12px 'IBM Plex Mono';letter-spacing:.14em;color:#8a8a96;margin-bottom:4px">FOLLOW</div><a href="community.html#channels">Discord</a><a href="community.html#channels">YouTube</a><a href="community.html#channels">X / Twitter</a><a href="community.html#channels">Twitch</a></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #26262e;font:400 12px 'IBM Plex Mono';color:#6e6e7a">
+    <span>© 2026 EVILDEATH. ALL RIGHTS RESERVED.</span>
+    <div style="display:flex;gap:20px;flex-wrap:wrap"><a href="#top" style="color:#8a8a96">Privacy</a><a href="#top" style="color:#8a8a96">Terms</a><a href="#top" style="color:#8a8a96">Cookies</a><a href="#top" style="color:#8a8a96">Press</a></div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{}'>
+class Component extends DCLogic {
+  state = {
+    menuOpen: false,
+    query: '',
+    topic: '',
+    openId: 'q1',
+    tick: 0,
+    form: { topic: 'account', platform: 'pc', email: '', msg: '' },
+    tried: false,
+    submitted: false,
+    ticketId: '',
+  };
+  componentDidMount() {
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ menuOpen: false }); };
+    this.onResize = () => { if (this.state.menuOpen && window.innerWidth > 900) this.setState({ menuOpen: false }); };
+    window.addEventListener('keydown', this.onKey);
+    window.addEventListener('resize', this.onResize);
+    this.timer = setInterval(() => this.setState((s) => ({ tick: s.tick + 1 })), 2000);
+    let reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (reduce) return;
+    const tick = () => {
+      this.raf = 0;
+      const vh = window.innerHeight || 800;
+      const hero = document.getElementById('top');
+      const y = hero ? Math.max(0, -hero.getBoundingClientRect().top) : 0;
+      if (y < vh * 1.3) {
+        document.querySelectorAll('[data-ph]').forEach((el) => {
+          const s = parseFloat(el.getAttribute('data-ph')) || 0;
+          el.style.transform = 'translate3d(0,' + (y * s).toFixed(1) + 'px,0)';
+          const f = el.getAttribute('data-fade');
+          if (f) el.style.opacity = String(Math.max(0, 1 - y / (vh * parseFloat(f))));
+        });
+      }
+    };
+    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(tick); };
+    window.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', this.onScroll);
+    tick();
+  }
+  componentDidUpdate() {
+    document.body.style.overflow = this.state.menuOpen ? 'hidden' : '';
+  }
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.onKey);
+    window.removeEventListener('resize', this.onResize);
+    clearInterval(this.timer);
+    if (this.onScroll) {
+      window.removeEventListener('scroll', this.onScroll, { capture: true });
+      window.removeEventListener('resize', this.onScroll);
+    }
+    if (this.raf) cancelAnimationFrame(this.raf);
+    document.body.style.overflow = '';
+  }
+  goTo(id) {
+    try { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {}
+  }
+  setForm(k, v) { this.setState((s) => ({ form: { ...s.form, [k]: v } })); }
+  renderVals() {
+    const t = this.state.tick;
+    const wobble = (base, seed, amp) => Math.max(8, Math.round(base + Math.sin(t * 0.9 + seed) * amp + Math.sin(t * 2.3 + seed * 3) * amp * 0.4));
+    const OK = '#2de2e6', WARN = '#f5b942';
+    const mkBars = (seed, warn) => Array.from({ length: 20 }, (_, i) => {
+      const bad = warn && (i === 13 || i === 14 || i === 17 || i === 19);
+      const h = 40 + Math.abs(Math.sin(i * 1.7 + seed)) * 60;
+      return { h: (bad ? 100 : h).toFixed(0) + '%', c: bad ? WARN : 'rgba(45,226,230,' + (0.35 + (i / 20) * 0.5).toFixed(2) + ')' };
+    });
+    const regions = [
+      { name: 'NA West', code: 'NAW-1', ping: wobble(38, 1, 4), warn: false },
+      { name: 'NA East', code: 'NAE-2', ping: wobble(44, 2, 5), warn: false },
+      { name: 'Europe', code: 'EUC-1', ping: wobble(52, 3, 5), warn: false },
+      { name: 'Asia-Pacific', code: 'APS-3', ping: wobble(131, 4, 22), warn: true },
+      { name: 'Oceania', code: 'OCE-1', ping: wobble(71, 5, 6), warn: false },
+    ].map((r, i) => ({ ...r, color: r.warn ? WARN : OK, label: r.warn ? 'DEGRADED' : 'OPERATIONAL', bars: mkBars(i * 2.1, r.warn) }));
+
+    const TOPICS = [
+      { id: 'account', title: 'Account & security', desc: 'Login, 2FA, linking platforms, recovering a hacked account.', count: '42 articles', accent: '#2de2e6' },
+      { id: 'billing', title: 'Billing & purchases', desc: 'Refunds, missing Chrome Credits, season passes.', count: '31 articles', accent: '#ff2a6d' },
+      { id: 'tech', title: 'Technical issues', desc: 'Crashes, performance, connection errors, specs.', count: '57 articles', accent: '#ecebe6' },
+      { id: 'gameplay', title: 'Gameplay & progression', desc: 'Implants, syndicate rep, lost progress, cross-save.', count: '64 articles', accent: '#2de2e6' },
+      { id: 'bans', title: 'Bans & appeals', desc: 'Why you were flagged and how to appeal fairly.', count: '12 articles', accent: '#ff2a6d' },
+      { id: 'bug', title: 'Report a bug', desc: 'Found an exploit or glitch? Tell us before the syndicates do.', count: 'Bounty eligible', accent: '#ecebe6' },
+    ];
+    const topicName = (id) => (TOPICS.find((x) => x.id === id) || {}).title || '';
+    const topics = TOPICS.map((x, i) => {
+      const on = this.state.topic === x.id;
+      return {
+        ...x,
+        num: '0' + (i + 1),
+        pressed: on ? 'true' : 'false',
+        bg: on ? '#16161d' : '#101015',
+        border: on ? x.accent : '#26262e',
+        pick: () => { this.setState((s) => ({ topic: s.topic === x.id ? '' : x.id, openId: '' })); this.goTo('faq'); },
+      };
+    });
+
+    const FAQ = [
+      { id: 'q1', cat: 'account', q: 'How do I turn on two-factor authentication?', a: 'Go to Settings → Account → Security and choose an authenticator app or SMS. Runners with 2FA on get the Iron Sigil weapon charm, and it protects your Chrome Credits if your password leaks.' },
+      { id: 'q2', cat: 'billing', q: 'Can I get a refund on a Chrome Credits purchase?', a: 'Unspent Chrome Credits can be refunded within 14 days of purchase. Items bought with credits are final, but one courtesy refund per year is available from Settings → Purchases → Request refund.' },
+      { id: 'q3', cat: 'tech', q: 'The game crashes on launch — what should I try first?', a: 'Update your GPU drivers, then verify the game files in your launcher.\nIf it still crashes, delete the shader cache folder (Documents/EvilDeath/cache) and relaunch. Still stuck? Send a ticket with your crash log attached.' },
+      { id: 'q4', cat: 'gameplay', q: 'I lost my implant loadout after the 1.4 update', a: 'Patch 1.4 reset loadouts that used the old Netrunner tree. Every runner got a free respec token in their mailbox. Your implants are safe in Inventory → Cyberware.' },
+      { id: 'q5', cat: 'bans', q: 'I think I was banned by mistake. How do I appeal?', a: 'Open a ticket with the topic "Ban appeal" from the same account. A human reviewer checks every appeal within 72 hours, and false positives are restored with a compensation pack.' },
+      { id: 'q6', cat: 'tech', q: 'What is error code ND-404 "Signal lost"?', a: 'ND-404 means your connection to the district server timed out. Check the server status above; if your region is operational, restart your router or switch to a wired connection.' },
+      { id: 'q7', cat: 'account', q: 'How do I link my PlayStation or Xbox account for cross-save?', a: 'Sign in at evildeath.game/account, choose Linked Platforms and follow the prompts. Progress syncs automatically the next time you launch on either platform.' },
+      { id: 'q8', cat: 'bug', q: 'Is there a reward for reporting exploits?', a: 'Yes. Verified exploit reports earn Bug Bounty points, which can be swapped for exclusive cosmetics. Never share exploits publicly; that can get your account flagged.' },
+    ];
+    const qText = this.state.query.trim().toLowerCase();
+    const words = qText.split(/\s+/).filter(Boolean);
+    const list = FAQ.filter((f) => (!this.state.topic || f.cat === this.state.topic) && (!words.length || words.every((w) => (f.q + ' ' + f.a + ' ' + topicName(f.cat)).toLowerCase().includes(w))));
+    const catLabel = { account: 'ACCOUNT', billing: 'BILLING', tech: 'TECH', gameplay: 'GAMEPLAY', bans: 'BANS', bug: 'BUGS' };
+    const catColor = { account: '#2de2e6', billing: '#ff2a6d', tech: '#ecebe6', gameplay: '#2de2e6', bans: '#ff2a6d', bug: '#ecebe6' };
+    const autoOpen = list.length === 1 ? list[0].id : this.state.openId;
+    const faqs = list.map((f) => {
+      const open = autoOpen === f.id;
+      return {
+        ...f,
+        cat: catLabel[f.cat], accent: catColor[f.cat],
+        open, expanded: open ? 'true' : 'false',
+        sign: open ? '−' : '+', signColor: open ? '#2de2e6' : '#8a8a96',
+        toggle: () => this.setState((s) => ({ openId: s.openId === f.id ? '' : f.id })),
+      };
+    });
+    const filterBits = [];
+    if (this.state.topic) filterBits.push(topicName(this.state.topic).toUpperCase());
+    if (qText) filterBits.push('"' + this.state.query.trim() + '"');
+
+    const quick = (q) => () => { this.setState({ query: q, topic: '', openId: '' }); this.goTo('faq'); };
+
+    const f = this.state.form;
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email);
+    const msgOk = f.msg.trim().length >= 10;
+    const showEmailErr = this.state.tried && !emailOk;
+    const showMsgErr = this.state.tried && !msgOk;
+
+    const pad = (n) => String(n).padStart(2, '0');
+    const now = new Date();
+
+    return {
+      menuOpen: this.state.menuOpen,
+      menuExpanded: this.state.menuOpen ? 'true' : 'false',
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+
+      query: this.state.query,
+      onQuery: (e) => this.setState({ query: e.target.value, openId: '' }),
+      heroSearch: (e) => { e.preventDefault(); this.goTo('faq'); },
+      quick1: quick('refund'), quick2: quick('crash'), quick3: quick('2FA'), quick4: quick('ban'),
+
+      updated: pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds()),
+      regions,
+      topics,
+      faqs,
+      noResults: faqs.length === 0,
+      filtering: filterBits.length > 0,
+      filterLabel: 'FILTER: ' + filterBits.join(' + '),
+      clearFilters: () => this.setState({ query: '', topic: '', openId: 'q1' }),
+
+      chatWait: String(3 + (t % 3)),
+      form: f,
+      setTopic: (e) => this.setForm('topic', e.target.value),
+      setPlatform: (e) => this.setForm('platform', e.target.value),
+      setEmail: (e) => this.setForm('email', e.target.value),
+      setMsg: (e) => this.setForm('msg', e.target.value),
+      emailInvalid: showEmailErr ? 'true' : 'false',
+      msgInvalid: showMsgErr ? 'true' : 'false',
+      emailBorder: showEmailErr ? '#ff5c8a' : '#3a3a44',
+      msgBorder: showMsgErr ? '#ff5c8a' : '#3a3a44',
+      showEmailErr, showMsgErr,
+      submit: (e) => {
+        e.preventDefault();
+        if (!emailOk || !msgOk) { this.setState({ tried: true }); return; }
+        const id = '#ED-' + Math.floor(40000 + Math.random() * 59999);
+        this.setState({ submitted: true, ticketId: id, tried: false });
+      },
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      ticketId: this.state.ticketId,
+      resetForm: () => this.setState({ submitted: false, form: { topic: 'account', platform: 'pc', email: '', msg: '' } }),
+    };
+  }
+}
+</script>
+</body>
+</html>
